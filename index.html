@@ -1,0 +1,96 @@
+<!-- 
+
+    reference : https://www.geeksforgeeks.org/lmns-algorithms-gq/ for content in the technical documentation page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<main id="main-doc">
+  <nav id="navbar">
+    <div class="divider"></div>
+    <header>Algorithms</header>
+    <ul>
+      <li><a class="nav-link" href="#First_section">Analyze an algorithm</a></li>
+      <li><a class="nav-link" href="#Second_section">Asymptotic Notations</a></li>
+      <li><a class="nav-link" href="#Third_section">Solving recurrences</a></li>
+      <li><a class="nav-link" href="#Fourth_section">B-Tree</a></li>
+      <li><a class="nav-link" href="#Fifth_section">Graph</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+  <section id="First_section" class="main-section">
+    <header>Analyze an Algorithm</header>
+    <p>
+     
+      Worst Case Analysis (Usually Done):In the worst case analysis, we calculate upper bound on running time of an algorithm by considering worst case  (a situation where algorithm takes maximum time)
+      ,Average Case Analysis (Sometimes done) :In average case analysis, we take all possible inputs and calculate computing time for all of the inputs.
+      ,Best Case Analysis (Bogus) :In the best case analysis, we calculate lower bound on running time of an algorithm.
+      </p>
+    
+     
+    
+  </section>
+  <section id="Second_section" class="main-section">
+    <header>Asymptotic Notations</header>
+    <p>
+     
+      Θ Notation:The theta notation bounds a functions from above and below, so it defines exact asymptotic behavior.
+
+      Θ((g(n)) = {f(n): there exist positive constants c1, c2 and n0 such that
+      0 <= c1*g(n) <= f(n) <= c2*g(n) for all n >= n0}
+      <br><br>
+          Big O Notation: The Big O notation defines an upper bound of an algorithm, it bounds a function only from above.
+      
+      O(g(n)) = { f(n): there exist positive constants c and n0 such that
+            0 <= f(n) <= cg(n) for all n >= n0}
+      <br><br>
+          Ω Notation: Just as Big O notation provides an asymptotic upper bound on a function, Ω notation provides an asymptotic lower bound.
+      
+      Ω (g(n)) = {f(n): there exist positive constants c and n0 such that
+       0 <= cg(n) <= f(n) for all n >= n0}.
+   
+  </section>
+  <section id="Third_section" class="main-section">
+    <header>Solving recurrences</header>
+    <p>
+ 
+      Substitution Method: We make a guess for the solution and then we use mathematical induction to prove the guess is correct or incorrect.
+     <br><br> Recurrence Tree Method: We draw a recurrence tree and calculate the time taken by every level of tree. Finally, we sum the work done at all levels.
+      <br><br> Master theorem Method: Only for following type of recurrences or for recurrences that can be transformed to following type.
+    <br><br>
+    T(n) = aT(n/b) + f(n) where a >= 1 and b > 1
+    
+  </section>
+  <section id="Fourth_section" class="main-section">
+    <header>B-Tree</header>
+    <p>
+        B-Tree is a self-balancing search tree. In most of the other self-balancing search trees (like AVL and Red Black Trees), it is assumed that everything is in main memory. To understand use of B-Trees, we must think of huge amount of data that cannot fit in main memory. When the number of keys is high, the data is read from disk in the form of blocks. Disk access time is very high compared to main memory access time. The main idea of using B-Trees is to reduce the number of disk accesses.
+    </p>
+     
+  </section>
+  <section id="Fifth_section" class="main-section">
+    <header>Graph</header>
+    <p>
+        Graph is a data structure that consists of following two components: <br>
+        1. A finite set of vertices also called as nodes. <br>
+        2. A finite set of ordered pair of the form (u, v) called as edge. The pair is ordered because (u, v) is not same as (v, u) in case of directed graph(di-graph). The pair of form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may contain weight/value/cost. Following two are the most commonly used representations of graph.
+        <br> <br>
+            Adjacency Matrix: Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph.
+            Adjacency List : An array of linked lists is used. Size of the array is equal to number of vertices.
+    </p>
+    
+     
+  </section>
+ </div>
+</main>
+</body>
+</html>
